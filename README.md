@@ -4,6 +4,8 @@
 
 第一步：登录 https://pro.similarweb.com/
 
+![](./assets/data.png)
+
 第二步：安装浏览器拓展插件
 
 1. 在 Chrome 浏览器中打开 `chrome://extensions/`
@@ -11,16 +13,16 @@
 3. 点击"加载已解压的扩展程序"
 4. 选择本项目目录（也可以直接将文件夹拖过来）
 
-[](./assets/rk.png)
+![](./assets/rk.png)
 
-[](./assets/ext.png)
+![](./assets/ext.png)
 
 
 第三步：点击开始即可
 
-[](./assets/start.png)
+![](./assets/start.png)
 
-[](./assets/page.png)
+![](./assets/page.png)
 
 
 ## 其他说明
