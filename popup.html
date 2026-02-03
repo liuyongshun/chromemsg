@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SimilarWeb Pro API Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">    
+    <div class="form-group">
+      <label for="jsonInput">JSON数据源:</label>
+      <textarea id="jsonInput" rows="2" placeholder='留空使用默认，或输入JSON/域名'></textarea>
+    </div>
+
+    <div class="form-row-compact">
+      <div class="form-group-compact">
+        <label>合并方式:</label>
+        <select id="mergeMode">
+          <option value="merge" selected>合并</option>
+          <option value="override">覆盖</option>
+        </select>
+      </div>
+
+      <div class="form-group-compact">
+        <div id="mergeModeHint" class="merge-hint-compact"></div>
+      </div>
+    </div>
+
+    <button id="startButton">开始执行</button>
+
+    <div class="result-container">
+      <div class="progress-info" id="progressInfo"></div>
+      
+      <div class="view-toggle">
+        <button class="view-btn active" data-view="pretty">美化视图</button>
+        <button class="view-btn" data-view="json">JSON视图</button>
+      </div>
+      
+      <div id="jsonViewContainer" class="json-view-container hidden">
+        <div class="json-toolbar">
+          <button id="copyJsonBtn" class="copy-btn">复制JSON</button>
+          <span id="copyStatus" class="copy-status"></span>
+        </div>
+        <pre id="jsonView" class="json-view"></pre>
+      </div>
+      <div id="prettyView" class="pretty-view"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
